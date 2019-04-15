@@ -2,7 +2,8 @@ let objArray = [];
 let objNum =35;
 
 function setup() {
-  createCanvas(windowWidth, 500);
+  var canvas = createCanvas(windowWidth, 500);
+  canvas.parent("header");
   colorMode(HSB);
   angleMode(DEGREES)
   for (let i = 0; i<objNum; i++){
