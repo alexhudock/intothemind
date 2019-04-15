@@ -1,0 +1,22 @@
+﻿html {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(73,73,73);
+}
+
+#header{
+    margin:0;
+}
+
+#portfolio {
+    max-width: 500px;
+    margin:auto;
+}
+
+#portfolio img{
+    max-width: 500px;
+    padding: 20px;
+
+}
