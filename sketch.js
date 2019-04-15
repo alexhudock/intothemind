@@ -3,7 +3,7 @@ let objNum =35;
 
 function setup() {
   var canvas = createCanvas(windowWidth, 500);
-  canvas.parent("header");
+  canvas.parent('header')
   colorMode(HSB);
   angleMode(DEGREES)
   for (let i = 0; i<objNum; i++){
@@ -131,9 +131,9 @@ class impRect {
     fill(0,0,100)
     stroke(0,0,0)
     strokeWeight(2)
-  text('Alex', width/2-150, height/2);
+  text('Alex', width/2-200, height/2);
   fill(0, 0, 100);
-  text('Hudock', width/2, height/2);
+  text('Hudock', width/2-50, height/2);
     
   }
 }
