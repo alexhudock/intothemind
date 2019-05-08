@@ -2,7 +2,7 @@ let objArray = [];
 let objNum =35;
 
 function setup() {
-  var canvas = createCanvas(windowWidth, 500);
+  var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('header')
   colorMode(HSB);
   angleMode(DEGREES)
@@ -127,13 +127,13 @@ class impRect {
     pop();
 
 
-    textSize(72);
+   textSize(72);
     fill(0,0,100)
     stroke(0,0,0)
     strokeWeight(2)
-  text('Alex', width/2-200, height/2);
+  text('Into the mind of...', width/6, height/2);
   fill(0, 0, 100);
-  text('Hudock', width/2-50, height/2);
+  text('Alex Hudock', width/4-100, height/2+75);
     
   }
 }
@@ -146,4 +146,8 @@ function mouseClicked(){
   }
 
 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

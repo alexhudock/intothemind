@@ -7,16 +7,22 @@ body {
 }
 
 #header{
+    position: fixed;
+    z-index: 1;
     margin:0;
 }
 
 #portfolio {
-    max-width: 500px;
-    margin:auto;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    width: 575px;
+    margin-left: 100px;
+    background-color: rgba(82,82,82,.8);
 }
 
 #portfolio img{
-    max-width: 500px;
-    padding: 20px;
+    max-width: 490px;
+    padding: 40px;
 
 }
