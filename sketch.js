@@ -37,6 +37,8 @@ function draw() {
  
 }
 
+
+//the rotation, placement, and color of imprect
 class impRect {
   constructor() {
     this.x = random(0,width);
@@ -45,7 +47,7 @@ class impRect {
     this.fillH = random(360);
     this.fillS = 45;
     this.fillB = 100;
-     this.rotation = random(360);
+    this.rotation = random(360);
     
     
     
@@ -53,6 +55,8 @@ class impRect {
     
   }
 
+    
+ //the speed that the imprects fall
    move() {
     this.y = this.y +this.fallSpeed;
     if(this.y>height+100){
@@ -64,6 +68,8 @@ class impRect {
     
   }
 
+    
+    //setup for variables
   display() {
     
     let x = -66;
@@ -126,7 +132,7 @@ class impRect {
 
     pop();
 
-
+//text
    textSize(72);
     fill(0,0,100)
     stroke(0,0,0)
@@ -138,7 +144,7 @@ class impRect {
   }
 }
 
-
+//rearrange shapes when clicked
 function mouseClicked(){
   for (let i = 0; i<objNum; i++){
     objArray[i].x = random(width)
@@ -147,7 +153,7 @@ function mouseClicked(){
 
 
 }
-
+//allows window to be resized
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
